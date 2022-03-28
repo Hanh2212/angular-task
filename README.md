@@ -1,4 +1,40 @@
-# Frontend
+
+# angular-task
+
+- [Angular CLI][cli]
+- [NestJS][nestjs]
+- UI modules:
+  - [Bootstrap][bootstrap]
+  - [ng-zorro][ng-zorro] UI comonent: `dropdown-menu`, `modal` and more
+- [Netlify][netlify]
+- [Heroku][heroku]
+
+[cli]: https://cli.angular.io/
+[nestjs]: https://nestjs.com/
+[bootstrap]: https://getbootstrap.com/
+[ng-zorro]: https://ng.ant.design/docs/introduce/en
+[netlify]: https://www.netlify.com/
+[heroku]: https://www.heroku.com/
+
+## High level design
+
+### Application architecture
+### Simple data interaction flow
+## Features
+### Angular application and simple Nest API
+- [x] Easy to understand project structure
+- [x] Simple CRUD list and its tasks
+- [x] Filter tasks by status
+
+While working with this application, I have the opportunity to revisit some of the interesting topics:
+- Deploy Angular application to Netlify
+
+## Setting up development environment
+- `git clone https://github.com/Hanh2212/angular-task.git`
+- `npm install`
+- `npm start` for angular web application
+- The app should run on `http://localhost:4200`
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
@@ -25,3 +61,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+Feel free to use my code on your project!
+[MIT](https://opensource.org/licenses/MIT)
