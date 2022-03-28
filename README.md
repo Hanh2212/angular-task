@@ -30,8 +30,8 @@ While working with this application, I have the opportunity to revisit some of t
 - Deploy Angular application to Netlify
 
 ## Setting up development environment
-- `git clone https://github.com/Hanh2212/angular-task-management.git`
-- `cd angular-task-management/frontend`
+- `git clone https://github.com/Hanh2212/angular-task.git`
+- `npm install`
 - `npm start` for angular web application
 - The app should run on `http://localhost:4200`
 
