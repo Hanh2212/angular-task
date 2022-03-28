@@ -1,6 +1,8 @@
 
 # angular-task
 
+## Tech stack
+- ![image](https://user-images.githubusercontent.com/52995963/160426530-d5807b8a-c6d2-4bd0-b5fd-8f469e3b09f4.png)
 - [Angular CLI][cli]
 - [NestJS][nestjs]
 - UI modules:
@@ -19,7 +21,12 @@
 ## High level design
 
 ### Application architecture
-### Simple data interaction flow
+
+AppModule will import:
+- ![image](https://user-images.githubusercontent.com/52995963/160422241-e358c90b-fb0d-4afb-8b38-ec7c5db058cd.png)
+- Angular needed modules such as `BrowserModule` and any module that need to run `forRoot`.
+- I configured the router to lazy-load only when needed. For example, `LoginModule` when I open the URL at `/login` and `TaskModule` when the URL is `/tasks`. Inside each modules, I import whatever modules that are required.
+
 ## Features
 ### Angular application and simple Nest API
 - [x] Easy to understand project structure
