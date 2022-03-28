@@ -5,7 +5,7 @@
 - [NestJS][nestjs]
 - UI modules:
   - [Bootstrap][bootstrap]
-  - [ng-zorro][ng-zorro] UI comonent: `dropdown-menu`, `modal` and more
+  - [ng-zorro][ng-zorro] UI component: `dropdown-menu`, `modal` and more
 - [Netlify][netlify]
 - [Heroku][heroku]
 
@@ -27,7 +27,7 @@
 - [x] Filter tasks by status
 
 While working with this application, I have the opportunity to revisit some of the interesting topics:
-- Deploy Angular application to Netlify
+- Deploy Angular application to Netlify, Nestjs to Heroku
 
 ## Setting up development environment
 - `git clone https://github.com/Hanh2212/angular-task.git`
