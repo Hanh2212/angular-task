@@ -45,6 +45,7 @@ export class LoginComponent implements OnInit {
             this.authService.setCredentials(data);
             this.toast.customToastr('success', data.message);
             this.router.navigate(['/tasks']);
+            this.authService.authName.next(true);
           }
         },
         error: error => {

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { LoginPayload, UserDetail } from '../model/user-detail.model';
 
 const credentialsKey = 'credentials';
@@ -11,6 +11,9 @@ const credentialsKey = 'credentials';
 })
 export class AuthenticationService {
   private credential!: UserDetail | null;
+
+  authName = new BehaviorSubject<boolean>(false);
+  $showName = this.authName.asObservable();
 
   constructor(private router: Router, private httpClient: HttpClient ) {
     const savedCredentials = localStorage.getItem(credentialsKey);
@@ -39,6 +42,7 @@ export class AuthenticationService {
   logout() {
     this.setCredentials();
     localStorage.clear();
+    this.authName.next(false);
     this.router.navigate(['/login']);
   }
 
