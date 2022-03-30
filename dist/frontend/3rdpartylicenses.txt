@@ -124,6 +124,9 @@ Standard 'no charge' license: https://greensock.com/standard-license. Club Green
 ng-zorro-antd
 MIT
 
+ngx-cursor
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
