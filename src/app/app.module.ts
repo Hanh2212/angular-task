@@ -17,6 +17,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ContentLoaderModule } from '@ngneat/content-loader';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { Toast } from './core/helper/toastr';
+import { NgxCursorModule } from 'ngx-cursor';
 
 registerLocaleData(en);
 
@@ -33,6 +34,7 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     NzDropDownModule,
     ContentLoaderModule,
+    NgxCursorModule,
     HotToastModule.forRoot(
       {
         position: 'top-right',
